@@ -1,0 +1,73 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\noomm\.yarn\releases\yarn-1.22.19.cjs install
+
+PATH: 
+  C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\MinGW\bin;C:\Program Files\MongoDB\Server\7.0\bin;C:\mongosh-1.10.6-win32-x64\mongosh-1.10.6-win32-x64\bin;C:\Program Files\nodejs\;C:\Users\noomm\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\noomm\AppData\Local\Programs\Python\Python310\;C:\Users\noomm\AppData\Local\Microsoft\WindowsApps;C:\Users\noomm\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\noomm\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\bin;;C:\Program Files\MongoDB\Server\7.0\bin;C:\Users\noomm\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.13.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://npm.fontawesome.com/@fortawesome%2ffontawesome-free: authentication required
+      at params.callback [as _callback] (C:\Users\noomm\.yarn\releases\yarn-1.22.19.cjs:77675:18)
+      at self.callback (C:\Users\noomm\.yarn\releases\yarn-1.22.19.cjs:135297:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (C:\Users\noomm\.yarn\releases\yarn-1.22.19.cjs:136269:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (C:\Users\noomm\.yarn\releases\yarn-1.22.19.cjs:136191:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "ewsn_frontend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "build": "webpack --mode=production --node-env=production",
+      "build:dev": "webpack --mode=development",
+      "build:prod": "webpack --mode=production --node-env=production",
+      "watch": "webpack --watch",
+      "serve": "webpack serve"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@babel/core": "^7.23.2",
+      "@babel/preset-env": "^7.23.2",
+      "@fortawesome/fontawesome-free": "^6.4.2",
+      "@webpack-cli/generators": "^3.0.7",
+      "autoprefixer": "^10.4.16",
+      "babel-loader": "^9.1.3",
+      "css-loader": "^6.8.1",
+      "file-loader": "^6.2.0",
+      "handlebars": "^4.7.8",
+      "html-bundler-webpack-plugin": "^2.14.3",
+      "postcss": "^8.4.31",
+      "postcss-import": "^15.1.0",
+      "postcss-loader": "^7.3.3",
+      "sass": "^1.69.3",
+      "sass-loader": "^13.3.2",
+      "style-loader": "^3.3.3",
+      "tailwindcss": "^3.3.3",
+      "webpack": "^5.88.2",
+      "webpack-cli": "^5.1.4",
+      "webpack-dev-server": "^4.15.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
