@@ -1,0 +1,41 @@
+@import'./variables';
+
+/** GLOBAL SCSS CODE ***/
+.container {
+    max-width: 450px;
+    margin-inline: auto;
+    min-height: 100vh;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+/** GLOBAL FORM INPUT STYLE ***/
+
+.form-input {
+    input {
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $border-color;
+        font-family: $font-en-primary;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        padding-block: 15px;
+        outline: none;
+        color: $input-text-color;
+
+        &::placeholder {
+            color: #BBBBBB;
+        }
+
+        &:-webkit-autofill {
+            border-bottom: 1px solid $border-color;
+            -webkit-text-fill-color: $input-text-color;
+            -webkit-box-shadow: 0 0 0px 1000px $color-white inset;
+            transition: background-color 5000s ease-in-out 0s;
+        }
+    }
+}

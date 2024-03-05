@@ -8,7 +8,7 @@ const config = {
         clean: true,
     },
     devServer: {
-        static:{
+        static: {
             directory: path.resolve(__dirname, 'dist')
         },
         open: true,
@@ -26,12 +26,11 @@ const config = {
     plugins: [
         new HtmlBundlerPlugin({
             entry: {
-                index:  './src/views/index.hbs',
-                tests:  './src/views/tests.hbs',
-                result:  './src/views/result.hbs',
+                index: './src/views/index.hbs',
+                signUp: './src/views/sign_up.hbs'
             },
             preprocessor: 'handlebars',
-            preprocessorOptions:{
+            preprocessorOptions: {
                 root: path.join(__dirname, 'src/views/'),
                 partials: [
                     'src/views/partials',
@@ -88,3 +87,4 @@ module.exports = () => {
     }
     return config;
 };
+
