@@ -10,6 +10,8 @@ module.exports = {
       'primary': {
         DEFAULT: '#EF233C',
         0: '#FFFFFF',
+        0.1:"#f7f7f7",
+        0.4:'#EF233C4D',
         0.5: '#BBBBBB',
         1: '#5A5A5A',
         1.5: '#CEC8F6',

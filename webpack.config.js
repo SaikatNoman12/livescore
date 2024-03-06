@@ -27,7 +27,9 @@ const config = {
         new HtmlBundlerPlugin({
             entry: {
                 index: './src/views/index.hbs',
-                signUp: './src/views/sign_up.hbs'
+                signUp: './src/views/sign_up.hbs',
+                signIn: './src/views/sign_in.hbs',
+                forgotPassword: './src/views/forgot_password.hbs'
             },
             preprocessor: 'handlebars',
             preprocessorOptions: {
