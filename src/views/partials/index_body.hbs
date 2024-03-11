@@ -1,5 +1,66 @@
-<main class="body-panel" role="main"><!-- Start Body Panel -->
-    <div class="max-w-[440px] px-[20px] mx-auto">
-        {{!-- {{> steps/initial_step }} --}}
+<div class="container min-h-screen  bg-primary-0">
+    <div class="section">
+        <div class="section-top text-right py-4 sm:px-6 px-4 mb-3">
+            <span class="font-satoshi font-bold text-primary block cursor-pointer">Skip</span>
+        </div>
+        <div class="section-main">
+            <div class="section-slide-area">
+                <div class="swiper w-full h-full">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-img">
+                                <img src="/images/png/slide.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-img">
+                                <img src="/images/png/slide.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-img">
+                                <img src="/images/png/slide.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <div class="section-body py-5 sm:px-7 px-4 text-center">
+                <h3 class="font-satoshi font-bold not-italic text-primary-10 text-26/[44px] mb-2.5">Next to view live
+                    scores</h3>
+                <p class="text-primary-1 text-base font-medium font-satoshi max-w-96 m-auto">In-depth coverage of
+                    Soccer, basketball, baseball, E-sport Livescore keeps you well informed of live
+                    scores</p>
+                <button
+                    class="text-base mt-8 bg-primary w-full block text-primary-0 font-satoshi font-bold py-3 px-4 rounded-2xl">Next</button>
+            </div>
+        </div>
     </div>
-</main><!-- End Body Panel -->
+</div>
+
+<script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        slidesPerView: 1.5,
+        spaceBetween: 10,
+        grabCursor: true,
+        loop: true,
+        centeredSlides: true,
+        effect: "coverflow",
+        coverflowEffect: {
+            rotate: 35,
+            stretch: 0,
+            depth: 60,
+            modifier: 1,
+            slideShadows: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        }
+
+    });
+</script>

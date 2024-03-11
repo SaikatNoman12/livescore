@@ -29,7 +29,10 @@ const config = {
                 index: './src/views/index.hbs',
                 signUp: './src/views/sign_up.hbs',
                 signIn: './src/views/sign_in.hbs',
-                forgotPassword: './src/views/forgot_password.hbs'
+                forgotPassword: './src/views/forgot_password.hbs',
+                post: './src/views/post.hbs',
+                resetPassword: './src/views/reset_password.hbs',
+                noticeList: './src/views/notice_list.hbs'
             },
             preprocessor: 'handlebars',
             preprocessorOptions: {

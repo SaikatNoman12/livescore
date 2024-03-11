@@ -14,6 +14,7 @@ module.exports = {
         0.4:'#EF233C4D',
         0.5: '#BBBBBB',
         1: '#5A5A5A',
+        1.2:"#D7D7D7",
         1.5: '#CEC8F6',
         2: '#BEB6F3',
         3: '#9E91EC',
@@ -34,6 +35,19 @@ module.exports = {
     fontFamily: {
       satoshi: ['satoshi', 'sans-serif'],
       OpenSans: ['Open Sans', 'sans-serif'],
+    },
+    fontSize: {
+      '18': '18px',
+      '20': '20px',
+      '26': '26px',
+      'sm':'15px',
+    },
+    boxShadow: {
+      'custom': '0px 4px 50px 0px #00000026',
+      'custom-1':'0px 20px 50px 0px #00000012'
+    },
+    borderRadius:{
+      '20':"20px"
     }
   },
   plugins: [],

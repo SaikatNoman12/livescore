@@ -1,0 +1,52 @@
+<div class="container min-h-screen bg-primary-0">
+    <div class="post-header-area flex bg-primary-0 justify-between items-center py-4 px-4">
+        <div class="post-user flex gap-2 justify-start items-center">
+            <div class="user-img">
+                <img src="/images/png/user.png" alt="" class="w-8 h-8 rounded-full">
+            </div>
+            <div class="user-title">
+                <a class="text-primary-10 font-medium font- font-satoshi text-sm m-0 not-italic block">Leslie
+                    Alexander</a>
+            </div>
+        </div>
+        <div class="cross-bar">
+            <img src="/images/svg/cross.svg" alt="" class="w-6 h-6 cursor-pointer">
+        </div>
+    </div>
+    <div class="post-form-area px-4 mt-4">
+        <form action="">
+            <div class="form-input mb-4">
+                <input type="text" placeholder="Title"
+                    class="bg-primary-0.1 block w-full py-3 px-5 font-satoshi font-medium text-base  rounded-3xl outline-none">
+            </div>
+            <div class="form-input mb-4">
+                <textarea placeholder="Description..." cols="10" rows="8"
+                    class="bg-primary-0.1 block w-full py-3.5 px-5 font-satoshi resize-none font-medium text-base  rounded-2xl outline-none"></textarea>
+            </div>
+            <div class="form-input mb-4">
+                <input type="Search tag." placeholder="Title"
+                    class="bg-primary-0.1 block w-full py-3 px-5 font-satoshi font-medium text-base  rounded-3xl outline-none">
+            </div>
+            <div class="file-uploaded-view mt-8 px-1">
+                <ul class="flex justify-between gap-4">
+                    <li class="cursor-pointer"><img src="/images/png/upload-gallery.png" alt=""></li>
+                    <li class="cursor-pointer"><img src="/images/png/upload-plus.png" alt=""></li>
+                    <li class="cursor-pointer"><img src="/images/png/upload-plus.png" alt=""></li>
+                    <li class="cursor-pointer"><img src="/images/png/upload-plus.png" alt=""></li>
+                    <li class="cursor-pointer"><img src="/images/png/upload-plus.png" alt=""></li>
+                    <li class="cursor-pointer"><img src="/images/png/upload-plus.png" alt=""></li>
+                    <li class="cursor-pointer"><img src="/images/png/upload-plus.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="sub-btn">
+                <button type="button"
+                    class="text-base mt-8 bg-primary-1.2 w-full block text-primary-1 font-satoshi font-bold py-3 px-4 rounded-3xl">Post</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="bottom-nav ">
+        {{> components/bottom_nav}}
+    </div>
+
+</div>
