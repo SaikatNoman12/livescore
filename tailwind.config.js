@@ -2,7 +2,21 @@
 module.exports = {
   content: ["./src/**/*.{html,js,hbs}"],
   theme: {
-    extend: {},
+    extend: {
+      borderRadius: {
+        '20': '20px'
+      },
+      backgroundImage: {
+        'bottom-gradient': "linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 50%)",
+      },
+      fontSize: {
+        '18': '18px',
+        '20': '20px',
+        '22': '22px',
+        '26': '26px',
+        'sm': '15px',
+      },
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -10,11 +24,12 @@ module.exports = {
       'primary': {
         DEFAULT: '#EF233C',
         0: '#FFFFFF',
-        0.1:"#f7f7f7",
-        0.4:'#EF233C4D',
+        0.1: "#f7f7f7",
+        0.4: '#EF233C4D',
         0.5: '#BBBBBB',
+        0.6:'#EDEDED',
         1: '#5A5A5A',
-        1.2:"#D7D7D7",
+        1.2: "#D7D7D7",
         1.5: '#CEC8F6',
         2: '#BEB6F3',
         3: '#9E91EC',
@@ -36,19 +51,12 @@ module.exports = {
       satoshi: ['satoshi', 'sans-serif'],
       OpenSans: ['Open Sans', 'sans-serif'],
     },
-    fontSize: {
-      '18': '18px',
-      '20': '20px',
-      '26': '26px',
-      'sm':'15px',
-    },
+
     boxShadow: {
       'custom': '0px 4px 50px 0px #00000026',
-      'custom-1':'0px 20px 50px 0px #00000012'
+      'custom-1': '0px 20px 50px 0px #00000012'
     },
-    borderRadius:{
-      '20':"20px"
-    }
+
   },
   plugins: [],
 }

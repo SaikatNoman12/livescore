@@ -32,7 +32,9 @@ const config = {
                 forgotPassword: './src/views/forgot_password.hbs',
                 post: './src/views/post.hbs',
                 resetPassword: './src/views/reset_password.hbs',
-                noticeList: './src/views/notice_list.hbs'
+                noticeList: './src/views/notice_list.hbs',
+                noticeDetails: './src/views/notice_details.hbs',
+                RecentPost: './src/views/recent_post.hbs'
             },
             preprocessor: 'handlebars',
             preprocessorOptions: {
