@@ -15,7 +15,8 @@ module.exports = {
         '22': '22px',
         '26': '26px',
         'sm': '15px',
-      },
+      }
+     
     },
     colors: {
       transparent: 'transparent',
@@ -28,6 +29,8 @@ module.exports = {
         0.4: '#EF233C4D',
         0.5: '#BBBBBB',
         0.6:'#EDEDED',
+        0.7:'#F5F5F5',
+        0.8:'#B9B9B9',
         1: '#5A5A5A',
         1.2: "#D7D7D7",
         1.5: '#CEC8F6',
@@ -54,8 +57,10 @@ module.exports = {
 
     boxShadow: {
       'custom': '0px 4px 50px 0px #00000026',
-      'custom-1': '0px 20px 50px 0px #00000012'
+      'custom-1': '0px 20px 50px 0px #00000012',
+      "custom-2":'0px 0px 15px 0px #0000001A'
     },
+    
 
   },
   plugins: [],

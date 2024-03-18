@@ -1,0 +1,65 @@
+<div class="container min-h-screen bg-primary-0">
+    <div class="back-area fixed top-0 left-0 w-full py-4 px-5 sm:px-6 flex items-center justify-center bg-primary-0">
+        <div class="back-area-icon absolute left-4 top-4">
+            <img class="w-6 h-6 cursor-pointer" src="/images/svg/left-angle.svg" alt="">
+        </div>
+        <div class="back-area-text w-full text-center">
+            <h3 class="font-satoshi font-bold text-20/[23px] text-primary-10">Settings</h3>
+        </div>
+    </div>
+
+    <div class="section-account pb-4 px-4 sm:px-6 pt-16">
+        <div class="section-account-main">
+            <div class="user-profile">
+                {{> components/user_profile}}
+            </div>
+
+
+            <div class="account-menu mt-10">
+                <ul>
+                    <li class="mb-4">
+                        <a href="#"
+                            class="flex items-center justify-between bg-primary-0.1 py-3 px-5 font-satoshi font-medium text-sm text-primary-10 rounded-3xl">
+                            <span class="flex items-center justify-start gap-2"><img class="w-5 h-5"
+                                    src="/images/svg/inquiry.svg" alt=""> Inquiry</span>
+                            <img class="w-5 h-5" src="/images/svg/arrow-right.svg" alt="">
+                        </a>
+                    </li>
+
+                    <li class="mb-4">
+                        <a href="#"
+                            class="flex items-center justify-between bg-primary-0.1 py-3 px-5 font-satoshi font-medium text-sm text-primary-10 rounded-3xl">
+                            <span class="flex items-center justify-start gap-2"><img class="w-5 h-5"
+                                    src="/images/svg/notice.svg" alt=""> Notice</span>
+                            <img class="w-5 h-5" src="/images/svg/arrow-right.svg" alt="">
+                        </a>
+                    </li>
+
+                    <li class="mb-4">
+                        <a href="#"
+                            class="flex items-center justify-between bg-primary-0.1 py-3 px-5 font-satoshi font-medium text-sm text-primary-10 rounded-3xl">
+                            <span class="flex items-center justify-start gap-2"><img class="w-5 h-5"
+                                    src="/images/svg/reset_password.svg" alt=""> Reset password</span>
+                            <img class="w-5 h-5" src="/images/svg/arrow-right.svg" alt="">
+                        </a>
+                    </li>
+
+                </ul>
+                <div class="log-out-btn mt-16">
+                    <a
+                        class="text-center block w-full bg-primary-0.4 py-3 px-5 font-satoshi font-medium text-sm text-primary-10 rounded-3xl">Log
+                        out</a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <div class="bottom-nav ">
+        {{> components/bottom_nav}}
+    </div>
+
+</div>
