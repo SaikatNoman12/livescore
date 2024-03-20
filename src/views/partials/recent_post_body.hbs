@@ -1,14 +1,12 @@
-<div class="container min-h-screen bg-primary-0 pb-20">
-    <div class="back-area fixed top-0 left-0 w-full bg-primary-0">
-        <div class="container py-3 px-3 sm:px-5">
-            <div class="back-area-text w-full flex justify-start gap-2">
-                <h3 class="font-satoshi font-bold text-26/[30px] text-primary-10">Recent Post</h3>
-                <img src="/images/svg/recent-post.svg" alt="">
+<div class="container min-h-screen bg-primary-0 pb-[77px]">
+    <div class="back-area max-w-[450px] mx-auto fixed top-0 right-0 left-0 w-full px-[20px] py-[10px] bg-primary-0">
+            <div class="back-area-text w-full flex justify-start items-center gap-[10px]">
+                <h3 class="font-satoshi font-bold text-[28px]/[44px] text-primary-10">Recent Post</h3>
+                <img class="block w-[24px] min-w-[24px] h-[24px]" src="/images/svg/recent-post.svg" alt="">
             </div>
-        </div>
     </div>
 
-    <div class="section-post  pt-12 mt-1">
+    <div class="section-post  pt-[60px]">
         <div class="section-pst-main-main">
       
 
@@ -20,6 +18,10 @@
 
     <div class="bottom-nav ">
         {{> components/bottom_nav}}
+    </div>
+
+    <div class="add-post">
+        <span class="w-[68px] text-[22px] cursor-pointer fixed right-[20px] bottom-[124px] h-[68px] rounded-full flex items-center justify-center bg-primary text-primary-0"><i class="fa fa-plus"></i></span>
     </div>
 
 </div>
