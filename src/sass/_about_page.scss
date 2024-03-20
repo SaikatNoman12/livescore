@@ -1,0 +1,6 @@
+.account-about{
+    min-height: calc(100vh - 395px);
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
