@@ -1,18 +1,14 @@
-<div class="container min-h-screen bg-primary-0 pb-[77px]">
-    <div class="back-area max-w-[450px] mx-auto fixed top-0 right-0 left-0 w-full px-[20px] py-[10px] bg-primary-0">
+<div class="container h-screen bg-primary-0 pb-[77px]">
+    <div class="back-area max-w-[450px] mx-auto  w-full px-[20px] py-[10px] bg-primary-0">
             <div class="back-area-text w-full flex justify-start items-center gap-[10px]">
-                <h3 class="font-satoshi font-bold text-[28px]/[44px] text-primary-10">Recent Post</h3>
+                <h3 class="font-satoshi font-bold text-[28px]/[38px] text-primary-10">Recent Post</h3>
                 <img class="block w-[24px] min-w-[24px] h-[24px]" src="/images/svg/recent-post.svg" alt="">
             </div>
     </div>
 
-    <div class="section-post  pt-[60px]">
+    <div class="section-post h-[calc(100vh-148px)] overflow-y-auto no-scrollbar">
         <div class="section-pst-main-main">
-      
-
         {{> components/recent_post_card}}
-
-
         </div>
     </div>
 
@@ -21,7 +17,7 @@
     </div>
 
     <div class="add-post">
-        <span class="w-[68px] text-[22px] cursor-pointer fixed right-[20px] bottom-[124px] h-[68px] rounded-full flex items-center justify-center bg-primary text-primary-0"><i class="fa fa-plus"></i></span>
+        <span class="w-[68px] text-[22px] cursor-pointer fixed right-[20px] bottom-[120px] h-[68px] rounded-full flex items-center justify-center bg-primary text-primary-0"><i class="fa fa-plus"></i></span>
     </div>
 
 </div>
