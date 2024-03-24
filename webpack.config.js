@@ -37,7 +37,9 @@ const config = {
                 recentPost: './src/views/recent_post.hbs',
                 recentPostDetails: './src/views/recent_post_details.hbs',
                 account: './src/views/account.hbs',
-                userInformation: './src/views/user_about.hbs'
+                userInformation: './src/views/user_about.hbs',
+                liveMatch: './src/views/match.hbs',
+                matchDetails: './src/views/match_details.hbs'
             },
             preprocessor: 'handlebars',
             preprocessorOptions: {

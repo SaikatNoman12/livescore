@@ -1,0 +1,98 @@
+<div class="container h-screen bg-primary-0">
+    <div class="section-match">
+
+        <div class="section-match-top bg-primary-0">
+            <div class="section-match-live-info relative pt-[23px]">
+                <div
+                    class="section-match-live-info-main relative z-10 bg-primary-0 w-[275px] py-[14px] pl-[20px] pr-[43px] shadow-custom-3 rounded-e-[45px]">
+                    <h3 class="font-satoshi font-bold text-[21px]/[34px] not-italic text-primary">LIVE Match Updates
+                    </h3>
+                    <h4 class="font-satoshi font-bold text-[21px]/[34px] not-italic text-primary-10">With Quick Score!
+                    </h4>
+                </div>
+                <div class="bg w-full h-[60%] bg-primary absolute top-0 left-0 z-6"></div>
+            </div>{{!--End Section Match Live Info --}}
+
+            <div class="section-match-tab mt-[10px] pl-[20px]">
+                <div class="section-match-tab-main overflow-x-auto no-scrollbar">
+                    <ul class="flex justify-start  items-center gap-[12px]">
+                        <li><button
+                                class="py-[8px] bg-primary  rounded-[22px] px-[12px] text-nowrap text-center font-satoshi text-primary-0 text-[15px]/[20px] not-italic font-medium">Soccer</button>
+                        </li>
+                        <li><button
+                                class="py-[8px] rounded-[22px] px-[12px] text-nowrap text-center font-satoshi text-primary-1 text-[15px]/[20px] not-italic font-medium">Baseball</button>
+                        </li>
+                        <li><button
+                                class="py-[8px] rounded-[22px] px-[12px] text-nowrap text-center font-satoshi text-primary-1 text-[15px]/[20px] not-italic font-medium">Basketball</button>
+                        </li>
+                        <li><button
+                                class="py-[8px] rounded-[22px] px-[12px] text-nowrap text-center font-satoshi text-primary-1 text-[15px]/[20px] not-italic font-medium">E-sport(League
+                                of legends)</button></li>
+                    </ul>
+                </div>
+            </div>{{!--End Section Match Tab --}}
+
+            <div class="section-match-live-calendar-area mt-[10px] pb-[13px] px-[10px] ">
+                <div class="section-match-live-calendar-main">
+
+                    <ul class="flex items-center justify-between gap-[5px] text-center">
+                        <li class="w-full py-[2px] px-[5px]">
+                            <span
+                                class="block fonbt-satoshi text-primary-1 font-medium text-[12px]/[16px] not-italic">TUE
+                                <br>20 Feb </span>
+                        </li>
+                        <li class="w-full py-[2px] px-[5px]">
+                            <span
+                                class="block fonbt-satoshi text-primary-1 font-medium text-[12px]/[16px] not-italic">WED
+                                <br>21 Feb </span>
+                        </li>
+                        <li class="w-full py-[2px] px-[5px]">
+                            <span
+                                class="block fonbt-satoshi text-primary-1 font-medium text-[12px]/[16px] not-italic">THU
+                                <br>22 Feb </span>
+
+                        </li>
+
+
+                        <li class="w-full py-[2px] px-[5px] bg-primary-11 rounded-[6px]">
+                            <span class="block fonbt-satoshi text-primary font-medium text-[12px]/[16px] not-italic">FRI
+                                <br>Today </span>
+                        </li>
+
+
+                        <li class="w-full py-[2px] px-[5px]">
+
+                            <span
+                                class="block fonbt-satoshi text-primary-1 font-medium text-[12px]/[16px] not-italic">SAT
+                                <br>23 Feb </span>
+                        </li>
+
+                        <li class="w-full">
+                            <img class="min-w-[30px] mx-auto h-[24px] border-l  border-solid  border-primary-1 pl-[2px]"
+                                src="/images/svg/calendar.svg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>{{!--End Section Match Calendar --}}
+
+        </div>{{!--End Section Match Top --}}
+
+
+
+
+        <div
+            class="section-match-main bg-primary-12 py-[13px] px-[20px] h-[calc(100vh-308px)] overflow-y-auto no-scrollbar">
+            {{> components/match_card}}
+            {{> components/match_card}}
+            {{> components/match_card}}
+
+        </div>{{!--End Section Match Main --}}
+
+
+    </div>
+
+
+    <div class="bottom-nav">
+        {{> components/bottom_nav}}
+    </div>
+</div>

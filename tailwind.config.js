@@ -45,6 +45,11 @@ module.exports = {
         9: '#130E2D',
         9.5: '#090716',
         10: '#0E0E0E',
+        11:"#FFEFF1",
+        12:"#ecf1f3",
+        13:"#EDF2F4",
+        14:"#729d43",
+        15:"#CCC"
       },
       'secondary': '#729D43',
       'tertiary': '#3B3E4E',
@@ -58,7 +63,10 @@ module.exports = {
     boxShadow: {
       'custom': '0px 4px 50px 0px #00000026',
       'custom-1': '0px 20px 50px 0px #00000012',
-      "custom-2":'0px 0px 15px 0px #0000001A'
+      "custom-2":'0px 0px 15px 0px #0000001A',
+      "custom-3":'0px 10px 30px 0px rgba(0, 0, 0, 0.10)',
+      'custom-4':'0px 10px 30px 0px rgba(0, 0, 0, 0.10)',
+      'custom-5':'0px 20px 50px 0px rgba(0, 0, 0, 0.10)'
     },
     
 
