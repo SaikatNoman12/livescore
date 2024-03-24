@@ -8,6 +8,7 @@ module.exports = {
       },
       backgroundImage: {
         'bottom-gradient': "linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 50%)",
+        'bottom-gradient-1': "linear-gradient(180deg, rgba(255, 255, 255, 0.62) 23.91%, #EDF2F4 91.3%)",
       },
       fontSize: {
         '18': '18px',
