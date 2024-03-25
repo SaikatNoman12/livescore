@@ -1,23 +1,28 @@
 <div class="container h-screen bg-primary-0 pb-[77px]">
-    <div class="back-area max-w-[450px] mx-auto  w-full px-[20px] py-[10px] bg-primary-0">
-            <div class="back-area-text w-full flex justify-start items-center gap-[10px]">
+    <div class="back-area max-w-[450px] mx-auto  px-[20px] py-[10px] bg-primary-0">
+            <div class="back-area-text flex justify-start items-center gap-[10px]">
                 <h3 class="font-satoshi font-bold text-[28px]/[38px] text-primary-10">Recent Post</h3>
-                <img class="block w-[24px] min-w-[24px] h-[24px]" src="/images/svg/recent-post.svg" alt="">
+                <img class="block cursor-pointer w-[24px] min-w-[24px] h-[24px]" data-modal="modal-1" src="/images/svg/recent-post.svg" alt="">
             </div>
-    </div>
-
-    <div class="section-post h-[calc(100vh-148px)] overflow-y-auto no-scrollbar">
+    </div>{{!---END RECENT POST HEADER--}}
+    <div class="section-post h-[calc(100vh-144px)] overflow-y-auto no-scrollbar">
         <div class="section-pst-main-main">
         {{> components/recent_post_card}}
-        </div>
+        </div>{{!---END RECENT POST MAIN--}}
     </div>
-
     <div class="bottom-nav ">
         {{> components/bottom_nav}}
-    </div>
-
+    </div>{{!---END RECENT POST BOTTOM NAV--}}
     <div class="add-post">
-        <a href="post.html" class="w-[68px] text-[22px] cursor-pointer fixed right-[20px] bottom-[120px] h-[68px] rounded-full flex items-center justify-center bg-primary text-primary-0"><i class="fa fa-plus"></i></a>
-    </div>
+          <a href="post.html"   class="w-[68px]  cursor-pointer fixed right-[20px] bottom-[120px] h-[68px] rounded-full flex items-center justify-center bg-primary"><img class="w-[19p] h-[19px]" src="/images/svg/plus-icon.svg" alt=""></a>
+    </div>{{!---END ADD POST BTN--}}
 
+    <div class="recent-post-filter-area">
+                {{> components/recent_post_filter}}
+    </div>{{!---END ADD POST FILTER--}}
 </div>
+
+
+
+
+

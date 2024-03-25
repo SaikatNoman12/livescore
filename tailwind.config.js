@@ -50,7 +50,9 @@ module.exports = {
         12:"#ecf1f3",
         13:"#EDF2F4",
         14:"#729d43",
-        15:"#CCC"
+        15:"#CCC",
+        16:"rgba(0, 0, 0, 0.60)",
+        17:"#101817"
       },
       'secondary': '#729D43',
       'tertiary': '#3B3E4E',

@@ -39,3 +39,27 @@ body {
         scrollbar-width: none;  
   }
 }
+
+.filter-area{
+    transition: all 0.3s linear;
+    top: -100%;
+    &.active-modal{
+        top: 0px;
+    }
+}
+.logout-modal-box{
+    transition: all 0.3s linear;
+    bottom: -100%;
+    &.active-modal{
+        bottom: 0px;
+    }
+}
+.overlay{
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s linear;
+    &.active-modal-overlay{
+        visibility: visible;
+        opacity: 1;
+    }
+}
