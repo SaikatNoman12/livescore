@@ -1,5 +1,5 @@
 <div class="container h-screen bg-primary-0">
-    <div class="post-header-area flex bg-primary-0 justify-between items-center py-4 px-4">
+    <div class="post-header-area flex bg-primary-0 justify-between items-center pb-4 pt-[30px] px-[15px]">
         <div class="post-user flex gap-2 justify-start items-center">
             <div class="user-img">
                 <img src="/images/png/user.png" alt="" class="w-8 h-8 rounded-full">
@@ -13,7 +13,7 @@
             <a href="recentPost.html"><img src="/images/svg/cross.svg" alt="" class="w-6 h-6 cursor-pointer"></a>
         </div>
     </div>
-    <div class="post-form-area px-4 mt-4 h-[calc(100vh-165px)] overflow-y-auto no-scrollbar">
+    <div class="post-form-area px-[15px] mt-4 h-[calc(100vh-179px)] overflow-y-auto">
         <form action="">
             <div class="form-input mb-4">
                 <input type="text" placeholder="Title"
@@ -46,7 +46,7 @@
     </div>
 
     <div class="bottom-nav ">
-        {{> components/bottom_nav}}
+        {{> components/bottom_nav activeHome=false activePost=true activeAccount=false activeSetting=false}}
     </div>
 
 </div>

@@ -5,7 +5,6 @@ export default class Modal {
     }
     modalTriggerHandler() {
         for (let modalBtn of this.triggerBtns) {
-            console.log(modalBtn);
             const modalElm = document.getElementById(modalBtn.getAttribute("data-modal"));
             const closeBtn = modalElm.querySelector('.modal-close');
             const modalOverlay = document.querySelector('.overlay');

@@ -1,11 +1,12 @@
-
 body {
     background-color: #f7f7f7;
 }
+
 .container {
     max-width: 450px;
     margin-inline: auto;
 }
+
 /** GLOBAL FORM INPUT STYLE ***/
 .sign-form-area {
     .form-input {
@@ -13,6 +14,7 @@ body {
             &::placeholder {
                 color: #BBBBBB;
             }
+
             &:-webkit-autofill {
                 border-bottom: 1px solid #BBBBBB;
                 -webkit-text-fill-color: #5A5A5A;
@@ -22,6 +24,7 @@ body {
         }
     }
 }
+
 .sign-in-area {
     box-shadow: 0px -15px 30px 0px rgb(0 0 0 / 10%);
     border-radius: 50px 50px 0px 0px;
@@ -30,36 +33,87 @@ body {
 
 
 
+
+
+/* ---- Filter Modal Active Css --- */
+
+.filter-area {
+    transition: all 0.3s linear;
+    top: -100%;
+    &.active-modal {
+        top: 0px;
+    }
+}
+/* ---- Logout Modal Active Css --- */
+.logout-modal-box {
+    transition: all 0.3s linear;
+    bottom: -100%;
+
+    &.active-modal {
+        bottom: 0px;
+    }
+}
+
+/* ---- Modal Overlay Css --- */
+
+.overlay {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s linear;
+
+    &.active-modal-overlay {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+/* --- Match Tab Active Css --- */
+.match-tab{
+    .active-tab{
+        background-color: #EF233C!important;
+        color: #fff!important;
+    }
+}
+
+.match-details-tab{
+    .active-tab{
+        border-color: #EF233C;
+        color: #EF233C;
+    }
+}
+
+/* --- Match Details Bg Attached --- */
+.match-live-details{
+    background-image: url('./../images/png/details-bg.png');
+    background-position: 50% 77%;
+    position: relative;
+    &::after{
+        content: "";
+        display: block;
+        width: 100%;
+        position: absolute;
+        bottom: 18px;
+        left: 0px;
+        height: 1px;
+        background-color: #D9D9D9;
+    }
+}
+
+@media(max-width:370px){
+    .match-live-details{
+        background-position: 50% 75%;
+    }
+}
+
+/* ---- UTILITIES ---- */
 @layer utilities {
     .no-scrollbar::-webkit-scrollbar {
         display: none;
     }
+
     .no-scrollbar {
         -ms-overflow-style: none;
-        scrollbar-width: none;  
-  }
-}
-
-.filter-area{
-    transition: all 0.3s linear;
-    top: -100%;
-    &.active-modal{
-        top: 0px;
-    }
-}
-.logout-modal-box{
-    transition: all 0.3s linear;
-    bottom: -100%;
-    &.active-modal{
-        bottom: 0px;
-    }
-}
-.overlay{
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.3s linear;
-    &.active-modal-overlay{
-        visibility: visible;
-        opacity: 1;
+        scrollbar-width: none;
     }
 }

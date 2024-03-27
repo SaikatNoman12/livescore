@@ -1,14 +1,14 @@
 <div class="container h-screen bg-primary-0 pb-[75px]">
-    <div class="back-area max-w-[450px] mx-auto relative px-[28px] pt-[20px] pb-[10px]  bg-primary-0">
-        <div class="back-area-icon absolute left-[28px] top-[20px]">
-           <a href="liveMatch.html"> <img class="w-6 h-6 cursor-pointer" src="/images/svg/left-angle.svg" alt=""></a>
+    <div class="back-area max-w-[450px] mx-auto relative px-[15px] pt-[30px] pb-[10px]  bg-primary-0">
+        <div class="back-area-icon absolute left-[15px] top-[30px]">
+            <a href="liveMatch.html"> <img class="w-6 h-6 cursor-pointer" src="/images/svg/left-angle.svg" alt=""></a>
         </div>
         <div class="back-area-text w-full text-center">
             <h3 class="font-satoshi font-bold text-20/[23px] text-primary-10">Settings</h3>
         </div>
     </div>
 
-    <div class="section-account pb-4 px-[28px] pt-[4px] h-[calc(100vh-137px)] overflow-y-auto no-scrollbar">
+    <div class="section-account pb-4 px-[15px] pt-[4px] h-[calc(100vh-147px)] overflow-y-auto">
         <div class="section-account-main">
             <div class="user-profile">
                 {{> components/user_profile}}
@@ -53,7 +53,7 @@
     </div>
 
     <div class="bottom-nav">
-        {{> components/bottom_nav}}
+        {{> components/bottom_nav activeHome=false activePost=false activeAccount=true activeSetting=false}}
     </div>{{!--END ACCOUNT BOTTOM NAV--}}
     <div class="modal">
         {{> components/logout_modal}}

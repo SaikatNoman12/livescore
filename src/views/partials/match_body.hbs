@@ -13,21 +13,24 @@
                 <div class="bg w-full h-[60%] bg-primary absolute top-0 left-0 z-6"></div>
             </div>{{!--End Section Match Live Info --}}
 
-            <div class="section-match-tab mt-[10px] pl-[20px]">
-                <div class="section-match-tab-main overflow-x-auto no-scrollbar">
-                    <ul class="flex justify-start  items-center gap-[12px]">
+            <div class="section-match-tab mt-[10px] pl-[15px]">
+                <div class="section-match-tab-main overflow-x-auto no-scrollbar ">
+                    <ul class="flex justify-start  items-center gap-[12px] match-tab">
                         <li><button
-                                class="py-[8px] bg-primary  rounded-[22px] px-[12px] text-nowrap text-center font-satoshi text-primary-0 text-[15px]/[20px] not-italic font-medium">Soccer</button>
+                                class="py-[8px]  rounded-[22px] px-[12px] text-nowrap text-center font-satoshi text-primary-1 text-[15px]/[20px] not-italic font-medium"
+                                data-tab="soccer">Soccer</button>
                         </li>
                         <li><button
-                                class="py-[8px] rounded-[22px] px-[12px] text-nowrap text-center font-satoshi text-primary-1 text-[15px]/[20px] not-italic font-medium">Baseball</button>
+                                class="py-[8px] rounded-[22px] px-[12px] text-nowrap text-center font-satoshi text-primary-1 text-[15px]/[20px] not-italic font-medium"
+                                data-tab="baseball">Baseball</button>
                         </li>
                         <li><button
-                                class="py-[8px] rounded-[22px] px-[12px] text-nowrap text-center font-satoshi text-primary-1 text-[15px]/[20px] not-italic font-medium">Basketball</button>
+                                class="py-[8px] rounded-[22px] px-[12px] text-nowrap text-center font-satoshi text-primary-1 text-[15px]/[20px] not-italic font-medium"
+                                data-tab="basketball">Basketball</button>
                         </li>
                         <li><button
-                                class="py-[8px] rounded-[22px] px-[12px] text-nowrap text-center font-satoshi text-primary-1 text-[15px]/[20px] not-italic font-medium">E-sport(League
-                                of legends)</button></li>
+                                class="py-[8px] rounded-[22px] px-[12px] text-nowrap text-center font-satoshi text-primary-1 text-[15px]/[20px] not-italic font-medium"
+                                data-tab="E-sport(Leagueof legends)"> E-sport(Leagueof legends)</button></li>
                     </ul>
                 </div>
             </div>{{!--End Section Match Tab --}}
@@ -81,7 +84,7 @@
 
 
         <div
-            class="section-match-main bg-primary-12 py-[13px] px-[20px] h-[calc(100vh-308px)] overflow-y-auto no-scrollbar">
+            class="section-match-main bg-primary-12 py-[13px] pb-[6px] px-[15px] h-[calc(100vh-308px)] overflow-y-auto">
             {{> components/match_card}}
             {{> components/match_card}}
             {{> components/match_card}}
@@ -93,6 +96,6 @@
 
 
     <div class="bottom-nav">
-        {{> components/bottom_nav}}
+        {{> components/bottom_nav activeHome=true activePost=false activeAccount=false activeSetting=false}}
     </div>
 </div>

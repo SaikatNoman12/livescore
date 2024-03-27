@@ -2,11 +2,12 @@
     <div class="back-area max-w-[450px] mx-auto w-full flex items-center justify-start bg-primary-14">
         <div class="container py-[10px] px-[15px] ">
             <div class="back-area-icon">
-               <a href="liveMatch.html"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 28 28" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M18.3248 5.00852C18.5436 5.2273 18.6664 5.52399 18.6664 5.83335C18.6664 6.14271 18.5436 6.4394 18.3248 6.65818L10.983 14L18.3248 21.3418C18.5374 21.5619 18.655 21.8566 18.6523 22.1625C18.6496 22.4684 18.5269 22.761 18.3106 22.9773C18.0943 23.1936 17.8017 23.3163 17.4958 23.319C17.1899 23.3216 16.8952 23.204 16.6752 22.9915L8.50852 14.8248C8.2898 14.6061 8.16693 14.3094 8.16693 14C8.16693 13.6907 8.2898 13.394 8.50852 13.1752L16.6752 5.00852C16.894 4.7898 17.1907 4.66693 17.5 4.66693C17.8094 4.66693 18.1061 4.7898 18.3248 5.00852Z"
-                        fill="white" />
-                </svg></a>
+                <a href="liveMatch.html"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 28 28" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18.3248 5.00852C18.5436 5.2273 18.6664 5.52399 18.6664 5.83335C18.6664 6.14271 18.5436 6.4394 18.3248 6.65818L10.983 14L18.3248 21.3418C18.5374 21.5619 18.655 21.8566 18.6523 22.1625C18.6496 22.4684 18.5269 22.761 18.3106 22.9773C18.0943 23.1936 17.8017 23.3163 17.4958 23.319C17.1899 23.3216 16.8952 23.204 16.6752 22.9915L8.50852 14.8248C8.2898 14.6061 8.16693 14.3094 8.16693 14C8.16693 13.6907 8.2898 13.394 8.50852 13.1752L16.6752 5.00852C16.894 4.7898 17.1907 4.66693 17.5 4.66693C17.8094 4.66693 18.1061 4.7898 18.3248 5.00852Z"
+                            fill="white" />
+                    </svg></a>
             </div>
         </div>
     </div>
@@ -15,28 +16,64 @@
         <div class="match-details-main">
             <div class="match-details-top">
                 <div class="match-details-img">
-                    <img class="w-full block object-contain" src="/images/png/details.png" alt="">
+                    <div
+                        class="match-live-details pt-[10px] pb-[10px] px-[30px] bg-scroll bg-center bg-cover bg-no-repeat">
+                        <div class="swiper w-full h-full">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+
+                                    <div class="live-score-img">
+                                        <img class="max-w-[270px] h-[170px] w-full mx-auto"
+                                            src="/images/png/스크린샷 2024-02-14 오후 4.59 1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+
+                                    <div class="live-score-img">
+                                        <img class="max-w-[270px] h-[170px] w-full mx-auto"
+                                            src="/images/png/스크린샷 2024-02-14 오후 4.59 1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+
+                                    <div class="live-score-img">
+                                        <img class="max-w-[270px] h-[170px] w-full mx-auto"
+                                            src="/images/png/스크린샷 2024-02-14 오후 4.59 1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="match-chart-img">
+                        <img src="/images/png/chart.png" class="w-full h-[73px] object-cover" alt="">
+                    </div>
                 </div>
 
                 <div class="match-details-tab bg-primary-0 shadow-custom-5 px-[19px] pt-[6px]">
-                    <ul class="flex items-center justify-between gap-[30px]">
+                    <ul class="flex items-center justify-between gap-[30px] match-details-tab">
                         <li><button
-                                class="font-satoshi text-[12px]/[24px]  uppercase font-bold text-primary not-italic pb-[10px] border-b-[2px] border-solid border-primary">Chat</button>
+                                class="font-satoshi text-[12px]/[24px]  uppercase font-bold text-primary-1 not-italic pb-[10px] border-b-[2px] border-solid border-transparent"
+                                data-tab="chat">Chat</button>
                         </li>
                         <li><button
-                                class="font-satoshi text-[12px]/[24px]  uppercase font-bold text-primary-1 not-italic pb-[10px] border-b-[2px] border-solid border-transparent">Overview</button>
+                                class="font-satoshi text-[12px]/[24px]  uppercase font-bold text-primary-1 not-italic pb-[10px] border-b-[2px] border-solid border-transparent"
+                                data-tab="overview">Overview</button>
                         </li>
                         <li><button
-                                class="font-satoshi text-[12px]/[24px] uppercase font-bold text-primary-1 not-italic pb-[10px] border-b-[2px] border-solid border-transparent">Line-Ups</button>
+                                class="font-satoshi text-[12px]/[24px] uppercase font-bold text-primary-1 not-italic pb-[10px] border-b-[2px] border-solid border-transparent"
+                                data-tab="line-ups">Line-Ups</button>
                         </li>
                         <li><button
-                                class="font-satoshi text-[12px]/[24px] uppercase font-bold text-primary-1 not-italic pb-[10px] border-b-[2px] border-solid border-transparent">Predictions</button>
+                                class="font-satoshi text-[12px]/[24px] uppercase font-bold text-primary-1 not-italic pb-[10px] border-b-[2px] border-solid border-transparent"
+                                data-tab="predictions">Predictions</button>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div
-                class="match-details-body px-[20px] py-[10px] h-[calc(100vh-398px)] sm:h-[calc(100vh-465px)] overflow-y-auto no-scrollbar">
+            <div class="match-details-body px-[20px] py-[10px] h-[calc(100vh-410px)] overflow-y-auto" id="chat">
                 <div class="comment mb-[16px]">
                     <div class="comment-main flex items-center justify-start gap-[8px]">
                         <div class="user  min-w-[40px] ">
@@ -187,3 +224,19 @@
     </div>
 
 </div>
+
+<script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 5,
+        grabCursor: true,
+        loop: true,
+        centeredSlides: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        }
+    });
+</script>
