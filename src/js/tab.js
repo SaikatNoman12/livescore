@@ -6,7 +6,7 @@ export default class Tab {
     }
     tabTriggerHandler() {
         this.allTabBtns[0]?.classList.add('active-tab');
-        document.getElementById( this.allTabBtns[0]?.getAttribute("data-tab")).style.display = 'block'
+        // document.getElementById( this.allTabBtns[0].getAttribute("data-tab")).style.display = 'block'
         for (let tabBtn of this.allTabBtns) {
             tabBtn.onclick = (event) => {
                 for (let tabBtn of this.allTabBtns) {
