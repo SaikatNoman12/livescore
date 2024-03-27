@@ -8,12 +8,13 @@
         </div>
     </div>
 
-    <div class="section-account pb-4 px-[15px] pt-[4px] h-[calc(100vh-147px)] overflow-y-auto">
-        <div class="section-account-main">
-            <div class="user-profile">
+    <div class="section-account pb-4 px-[15px] pt-[4px] h-[calc(100vh-130px)] overflow-y-auto">
+        <div class="section-account-main h-full flex flex-col justify-around  items-center gap-[20px]">
+            <div class="user-profile w-full">
                 {{> components/user_profile}}
             </div>{{!--END ACCOUNT PROFILE--}}
-            <div class="account-menu mt-[60px]">
+
+            <div class="account-menu w-full">
                 <ul>
                     <li class="mb-5">
                         <a href="#"
@@ -43,12 +44,13 @@
                     </li>
 
                 </ul>
-                <div class="log-out-btn mt-[80px]">
-                    <a data-modal="modal-1"
-                        class="text-center cursor-pointer h-[56px] flex items-center justify-center w-full bg-primary-0.4 py-3 px-5 font-satoshi font-bold text-base/[20px] text-primary-10 rounded-[20px]">Log
-                        out</a>
-                </div>
             </div>{{!--END ACCOUNT MENU--}}
+
+            <div class="log-out-btn w-full">
+                <a data-modal="modal-1"
+                    class="text-center cursor-pointer h-[56px] flex items-center justify-center w-full bg-primary-0.4 py-3 px-5 font-satoshi font-bold text-base/[20px] text-primary-10 rounded-[20px]">Log
+                    out</a>
+            </div>
         </div>
     </div>
 

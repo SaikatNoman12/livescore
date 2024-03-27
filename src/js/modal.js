@@ -1,7 +1,10 @@
 export default class Modal {
     constructor() {
         this.triggerBtns = document.querySelectorAll("[data-modal]");
+        // Check if Modals exist in the page
+       if(this.triggerBtns.length > 0){
         this.modalTriggerHandler();
+       }
     }
     modalTriggerHandler() {
         for (let modalBtn of this.triggerBtns) {

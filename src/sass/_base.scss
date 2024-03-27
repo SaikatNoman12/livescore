@@ -40,10 +40,12 @@ body {
 .filter-area {
     transition: all 0.3s linear;
     top: -100%;
+
     &.active-modal {
         top: 0px;
     }
 }
+
 /* ---- Logout Modal Active Css --- */
 .logout-modal-box {
     transition: all 0.3s linear;
@@ -69,26 +71,27 @@ body {
 
 
 /* --- Match Tab Active Css --- */
-.match-tab{
-    .active-tab{
-        background-color: #EF233C!important;
-        color: #fff!important;
+.match-tab {
+    .active-tab {
+        background-color: #EF233C !important;
+        color: #fff !important;
     }
 }
 
-.match-details-tab{
-    .active-tab{
+.match-details-tab {
+    .active-tab {
         border-color: #EF233C;
         color: #EF233C;
     }
 }
 
 /* --- Match Details Bg Attached --- */
-.match-live-details{
+.match-live-details {
     background-image: url('./../images/png/details-bg.png');
     background-position: 50% 77%;
     position: relative;
-    &::after{
+
+    &::after {
         content: "";
         display: block;
         width: 100%;
@@ -100,8 +103,8 @@ body {
     }
 }
 
-@media(max-width:370px){
-    .match-live-details{
+@media(max-width:370px) {
+    .match-live-details {
         background-position: 50% 75%;
     }
 }
@@ -116,4 +119,9 @@ body {
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
+}
+
+/* --- DIPLAY NONE CLASS --- */
+.d-none {
+    display: none;
 }

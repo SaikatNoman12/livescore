@@ -1,6 +1,5 @@
 <div class="container h-screen bg-primary-0">
     <div class="section-match">
-
         <div class="section-match-top bg-primary-0">
             <div class="section-match-live-info relative pt-[23px]">
                 <div
@@ -30,14 +29,13 @@
                         </li>
                         <li><button
                                 class="py-[8px] rounded-[22px] px-[12px] text-nowrap text-center font-satoshi text-primary-1 text-[15px]/[20px] not-italic font-medium"
-                                data-tab="E-sport(Leagueof legends)"> E-sport(Leagueof legends)</button></li>
+                                data-tab="e-sport"> E-sport(Leagueof legends)</button></li>
                     </ul>
                 </div>
             </div>{{!--End Section Match Tab --}}
 
             <div class="section-match-live-calendar-area mt-[10px] pb-[13px] px-[10px] ">
                 <div class="section-match-live-calendar-main">
-
                     <ul class="flex items-center justify-between gap-[5px] text-center">
                         <li class="w-full py-[2px] px-[5px]">
                             <span
@@ -83,13 +81,18 @@
 
 
 
-        <div
-            class="section-match-main bg-primary-12 py-[13px] pb-[6px] px-[15px] h-[calc(100vh-308px)] overflow-y-auto">
+        <div class="section-match-main bg-primary-12 py-[13px] pb-[6px] px-[15px] h-[calc(100vh-291px)] overflow-y-auto"
+            id="soccer">
             {{> components/match_card}}
             {{> components/match_card}}
             {{> components/match_card}}
+        </div>{{!--End Match SOCCER --}}
 
-        </div>{{!--End Section Match Main --}}
+        <div class="baseball h-[calc(100vh-291px)] overflow-y-auto d-none" id="baseball"></div>{{!--End Match
+        BASEBALL--}}
+        <div class="basketball h-[calc(100vh-291px)] overflow-y-auto d-none" id="basketball"></div>{{!--End Match
+        BASKETBALL--}}
+        <div class="e-sport h-[calc(100vh-291px)] overflow-y-auto d-none" id="e-sport"></div>{{!--End Match E SPORT--}}
 
 
     </div>
