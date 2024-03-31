@@ -1,29 +1,67 @@
 <div class="container min-h-screen bg-primary-0">
     <div class="back-area max-w-[450px] mx-auto w-full flex items-center justify-start bg-primary-0">
-        <div class="container pb-[10px] pt-[30px] px-[15px] ">
+        <div class="container pb-[10px] pt-[30px] px-[14px] ">
             <div class="back-area-icon">
                 <img class="w-6 h-6 cursor-pointer" src="/images/svg/left-angle.svg" alt="">
             </div>
         </div>
     </div>
 
-    <div class="section-details pb-[3px] px-[15px] pt-[3px] h-[calc(100vh-114px)] overflow-y-auto">
+    <div class="section-details pb-[3px] pt-[4px] h-[calc(100vh-114px)] overflow-y-auto">
         <div class="section-details-main">
 
-            <div class="post-details mb-[24px]">
-                <h3 class="font-satoshi font-bold not-italic text-[22px]/[30px] mb-2 text-primary-10">The Miracle Comeback:
-                    How Argentina Defied the Odds ⚽️🌟</h3>
-                <p class="font-satoshi font-medium not-italic text-sm/[25px] text-primary-10 text-justify">Get ready to
-                    witness the stuff of legends! Picture this: Argentina trailing by two goals with only
-                    minutes left on the clock. The odds seemed insurmountable, but our players refused to give up. With
-                    grit, determination, and a never-say-die attitude, they launched an incredible comeback that left
-                    fans in awe. From a stunning equalizer to a last-minute winner, every moment was filled with drama
-                    and intensity. Against all odds, Argentina emerged victorious, proving that anything is possible in
-                    the beautiful game of soccer. Relive the magic with us as we celebrate this miraculous triumph and
-                    the indomitable spirit of our team! ⚽️🌟 </p>
+            <div class="post-details mb-[10px] pb-[16px] border-b border-primary-0.6 border-solid px-[15px] ">
+                <div class="user-info-area  mb-[10px]">
+                    <div class="user-info-title">
+                        <h4 class="font-satoshi font-medium text-[14px]/[20px] text-primary-1 mb-[8px] uppercase">Soccer
+                            news</h4>
+                    </div>
+
+                    <div class="user-info-main flex items-center w-[full] justify-between">
+                        <div class="post-user flex w-full gap-[12px] justify-start items-center">
+                            <div class="user-img">
+                                <img src="/images/png/user_profile.png" alt="" class="w-[36px] h-[36px] rounded-full">
+                            </div>
+                            <div class="user-title">
+                                <h4
+                                    class="text-primary-10 font-bold font- font-satoshi text-sm/[20px] not-italic block">
+                                    Thai Dieu Vy</h4>
+                            </div>
+                        </div>
+                        <div class="post-time">
+                            <span
+                                class="font-satoshi font-medium not-italic text-primary-1 text-[13px]/[20px] text-nowrap">Sep 22, 2023</span>
+                        </div>
+                    </div>
+                </div>{{!--- END USER INFORMATION ---}}
+
+                <div class="post-details mb-[12px]">
+                    <h3 class="font-satoshi font-bold not-italic text-[20px]/[30px] mb-2 text-primary-10">The Miracle
+                        Comeback:
+                        How Argentina Defied the Odds ⚽️🌟</h3>
+                    <p class="font-satoshi font-medium not-italic text-sm/[20px] text-primary-10 text-justify">Get ready to witness the stuff of legends! Picture this: Argentina trailing by two goals with only minutes left on the clock. The odds seemed insurmountable, but our players refused to give up. With grit, determination, and a never-say-die attitude, they launched an incredible comeback that left fans in awe.</p>
+                    <p class="font-satoshi font-medium not-italic text-sm/[20px] text-primary-10 text-justify">From a stunning equalizer to a last-minute winner, every moment was filled with drama and intensity. Against all odds, Argentina emerged victorious, proving that anything is possible in the beautiful game of soccer. Relive the magic with us as we celebrate this miraculous triumph and the indomitable spirit of our team! ⚽️🌟 </p>
+                </div>{{!--- END POST DESCRIPTION--}}
+
+                <div class="recent-post-img mb-[16px]">
+                    <img class="block w-full rounded-[8px]" src="/images/png/Articles.png" alt="">
+                </div>{{!-- END POST IMAGE ---}}
+
+                <div class="post-reaction-area flex items-center justify-end gap-2">
+                    <div class="post-reaction-right">
+                        <ul class="flex items-center justify-end gap-4">
+                            <li
+                                class="flex items-center cursor-pointer justify-end gap-1 font-satoshi font-medium not-italic text-primary-1 text-sm/[20px]">
+                                6 <img src="/images/svg/like.svg" alt=""></li>
+                            <li
+                                class="flex items-center  cursor-pointer justify-end gap-1 font-satoshi font-medium not-italic text-primary-1 text-sm/[20px]">
+                                10 <img src="/images/svg/comment.svg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>{{!-- END POST REACTION AREA ---}}
             </div>
 
-            <div class="post-comment-area">
+            <div class="post-comment-area px-[15px] ">
                 <div class="post-comment-title mb-3">
                     <h3 class="font-satoshi font-bold text-primary-10 text-18/[30px]">Comments (8)</h3>
                 </div>
@@ -71,10 +109,13 @@
         <form action="#" class="max-w-[450px] mx-auto w-full bg-primary-0.6 border-t border-solid border-primary-0.8 ">
             <div class="form-main flex justify-start items-center">
                 <div class="form-input w-full">
-                    <input class="w-full bg-primary-0.7 outline-none border-none font-satoshi not-italic text-sm font-medium py-3 px-4 text-primary-10" type="text" placeholder="Comment">
+                    <input
+                        class="w-full bg-primary-0.7 outline-none border-none font-satoshi not-italic text-sm font-medium py-3 px-4 text-primary-10"
+                        type="text" placeholder="Comment">
                 </div>
                 <div class="form-icon">
-                    <button class="bg-primary-0.7 w-10 mi-w-10 py-3 flex justify-center items-center"><img src="/images/svg/smile.svg" alt=""></button>
+                    <button class="bg-primary-0.7 w-10 mi-w-10 py-3 flex justify-center items-center"><img
+                            src="/images/svg/smile.svg" alt=""></button>
                 </div>
             </div>
         </form>
